@@ -3,6 +3,11 @@ export type PianoKeyType = {
     note: string;
 }
 
+export type RecordType = {
+    note: string;
+    delay: number;
+}
+
 export const PianoKeys: PianoKeyType[] = [
     {key: 'a', note: 'C4'},
     {key: 'w', note: 'Db4'},
@@ -22,3 +27,22 @@ export const PianoKeys: PianoKeyType[] = [
     {key: 'p', note: 'Eb5'},
     {key: ';', note: 'E5'}
 ];
+
+export const DemoRecord = [
+    {note: 'C4', delay: 500},
+    {note: 'Db4', delay: 1200},
+    {note: 'D4', delay: 1700},
+    {note: 'Eb4', delay: 2500},
+    {note: 'E4', delay: 2700},
+    {note: 'F4', delay: 3300},
+    {note: 'Gb4', delay: 3600},
+    {note: 'G4', delay: 4000},
+    {note: 'Ab4', delay: 3900},
+    {note: 'Ab4', delay: 4400},
+    {note: 'B5', delay: 4900},
+    {note: 'C5', delay: 4400},
+    {note: 'Db5', delay: 500},
+    {note: 'D5', delay: 5400},
+    {note: 'Eb5', delay: 6000},
+    {note: 'E5', delay: 6400},
+]

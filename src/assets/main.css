@@ -6,10 +6,6 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-.header {
-
-}
-
 .navbar {
     display: flex;
     justify-content: center;
@@ -30,8 +26,17 @@ body {
     text-shadow: 2px 2px 2px #757575;
 }
 
-.content {
-    
+.desc {
+    width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #afafaf;
+    color: #242424;
+    border-radius: 6px;
+}
+
+.heading {
+    text-align: center;
 }
 
 .piano-wrap {
@@ -54,6 +59,9 @@ body {
 }
 
 .piano__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     height: 86px;
     padding: 30px;
 }
@@ -63,6 +71,29 @@ body {
     font-size: 22px;
     font-weight: 700;
     text-shadow: 2px 2px 2px #000;
+}
+
+.piano__btns {
+    display: flex;
+    gap: 14px;
+}
+
+.piano__btn {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 50%;
+}
+
+.piano__btn,
+.piano__btn:focus {
+    outline: none;
+    border: none;
+}
+
+.piano__btn--recording {
+    background-color: red;
 }
 
 .piano__keys {
@@ -76,7 +107,7 @@ body {
     display: flex;
     align-items: end;
     justify-content: center;
-    color: #000;
+    color: #afafaf;
     background-color: #fff;
     border-radius: 0 0 6px 6px;
     border: 1px solid #000;
@@ -132,7 +163,7 @@ body {
     display: flex;
     align-items: end;
     justify-content: center;
-    color: #fff;
+    color: #afafaf;
     background-color: #000;
     border-radius: 0 0 4px 4px;
     padding: 0.4em 0;
